@@ -63,7 +63,7 @@ export default function App(props) {
       </Container>
 
       <Container>
-        <Label>User:&nbsp;
+        <Label water>User:&nbsp;
           <input name='username' value={formValues.username} onChange={onInputChange} />
         </Label><br />
         <Label fire>Email:&nbsp;
