@@ -1,4 +1,4 @@
-// import 'bootstrap/dist/css/bootstrap.min.css' // reactstrap
+import 'bootstrap/dist/css/bootstrap.min.css' // reactstrap
 
 // 👉 Importing React libs from node_modules folder
 import React from 'react'
