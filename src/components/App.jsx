@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
+
 // reactstrap
 import { Alert } from 'reactstrap';
-// our stylesheet
-import '../styles.less'
+
 // our styled components
 import Button from './Button'
 import Container from './Container'
