@@ -1,4 +1,4 @@
-# Side Effects
+# Advanced Styling Techniques
 
 ## About the setup
 
