@@ -5,7 +5,7 @@ import Details from './Details'
 
 export default function App() {
   const [friends, setFriends] = useState([])
-  const [currentFriendId, setCurrentFriendId] = useState(null)
+  const [currentFriendId, setCurrentFriendId] = useState('1')
 
   const openDetails = id => {
     setCurrentFriendId(id)
@@ -43,7 +43,7 @@ export default function App() {
         })
       }
       {
-        currentFriendId && <Details friendId={currentFriendId} close={closeDetails} />
+        currentFriendId && <Details key={currentFriendId} friendId={currentFriendId} close={closeDetails} />
       }
     </div>
   )
