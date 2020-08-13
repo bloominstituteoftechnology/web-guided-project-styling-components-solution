@@ -5,45 +5,26 @@ import axios from 'axios'
 
 const kf = keyframes`
   100% {
-    transform: scale(1);
     opacity: 1;
-  }
-`
-
-const Button = styled.button`
-  border: 1px solid grey;
-  font-size: ${pr => pr.big ? '2em' : '1em'};
-  height: ${pr => pr.big ? '3em' : '2em'};
-  width: ${pr => pr.big ? '6em' : '4em'};
-  color: white;
-  background-color: darkcyan;
-  transition: all 0.15s ease-in-out;
-
-  &:hover {
-    transition: all 0.15s ease-in-out;
-    background-color: cyan;
-    color: black;
+    transform: scale(1) rotateZ(0);
   }
 `
 
 const StyledDetails = styled.div`
-  background-color: ${pr => pr.color ? pr.color : 'initial'};
-  overflow: hidden;
-  animation: ${kf} 0.5s ease-in-out forwards;
-  transform: scale(0);
   opacity: 0;
-
+  transform: scale(2) rotateZ(180deg);
+  animation: ${kf} 0.5s ease-in-out forwards;
+  background-color: ${props => props.color ? props.color : 'initial'};
   p {
-    color: red;
-
-    &:nth-of-type(2) {
-      color: green;
-    }
+    color: ${props => props.theme.tertiaryColor};
+  }
+  h2 {
+    color: ${props => props.theme.primaryColor};
   }
 `
 
 export default function Details(props) {
-  const { friendId, close } = props
+  const { friendId, close, color } = props
   const [details, setDetails] = useState(null)
 
   useEffect(() => {
@@ -53,7 +34,7 @@ export default function Details(props) {
   }, [])
 
   return (
-    <StyledDetails red={details && details.hobbies.includes('fishing')} className='container'>
+    <StyledDetails color={color} className='container'>
       <h2>Details:</h2>
       {
         details &&
@@ -68,7 +49,7 @@ export default function Details(props) {
           </ul>
         </>
       }
-      <Button big onClick={close}>Close</Button>
+      <button onClick={close}>Close</button>
     </StyledDetails>
   )
 }

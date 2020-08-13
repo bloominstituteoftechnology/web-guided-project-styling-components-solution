@@ -1,14 +1,15 @@
-// 👉 Importing React libs from node_modules folder
 import React from 'react'
 import { render } from 'react-dom'
+import { ThemeProvider } from 'styled-components'
 
-// 👉 Importing a React component from another file
 import App from './components/App'
+import theme from './theme'
 
-// 👉 Importing our styles
 import './styles.css'
 
 render(
-  <App />,
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>,
   document.querySelector('#root')
 )
