@@ -2,8 +2,7 @@
   "name": "web-guided-project-styling-components-solution",
   "version": "0.0.1",
   "scripts": {
-    "start": "parcel src/index.html",
-    "server": "node server.js"
+    "start": "parcel src/index.html"
   },
   "license": "ISC",
   "devDependencies": {
@@ -13,8 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "msw": "^0.21.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.2.1",
@@ -23,9 +21,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LambdaSchool/web-guided-project-styling-components-solution.git"
-  },
-  "bugs": {
-    "url": "https://github.com/LambdaSchool/web-guided-project-styling-components-solution/issues"
-  },
-  "homepage": "https://github.com/LambdaSchool/web-guided-project-styling-components-solution#readme"
+  }
 }
