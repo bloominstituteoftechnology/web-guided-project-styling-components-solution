@@ -5,46 +5,49 @@
 * Walk the class through the clone, install and start process of the GP repo.
 * The project uses an API mocked with Mock Service Worker. No need to run separate script.
 
-## 2- Instructor's Checklist of Things to Cover
+## 2- Demo of npm, npx & CRA (20')
 
-### 2.1- npm & npx
+1. Verify version of node and npm as npx requires at least npm 5.2.0.
+2. Demo installing CRA globally and using it to scaffold a project.
+3. Demo listing all global npm packages with `npm list -g --depth=0`.
+4. Demo uninstalling CRA and using CRA with npx instead.
+5. Explain the `--use-npm` flag to force CRA to use npm even if Yarn is available.
+6. Review the available scripts.
 
-* Installing packages globally with npm.
-* Using npx (npm version 5.2.0 +).
-* Using CRA with and without npx.
-* The `--use-npm` flag (to force the use of npm even if Yarn is available).
-* Review of scripts available in CRA apps.
+## 3- Demo of Styled Components (70')
 
-### 2.2- Styled Components
+### 3.1- Getting Started
 
-* Installation of the library.
-* Creation of a theme object inside `theme/index.js` to avoid hard coding values in our styles.
-* Importing and using the `ThemeProvider` to wrap the app in `src/index.js`.
-* We can combine Styled Components with CSS. No need to choose between one or the other.
-* Declaring and using a styled component.
-* Accessing the theme from within a styled component.
-* Passing props into a styled component.
-* Using media queries.
-* Nesting rules and the `&`.
-* Pseudo classes and states.
-* Pseudo elements and the `content` rule.
-* Transitioning `transform` and `opacity` (optional).
-* Keyframes and animations (optional).
-* See the style tag created inside `index.html` by Styled Components.
-* See the class names created by Styled Components inside `index.html`.
+1. Show the docs and install library.
+2. Explain can combine Styled Components with CSS. No need to choose between one over the other.
+3. Create a theme object inside `theme/index.js` to avoid hard coding values in our styles.
+4. Move inside `src/index`, import `ThemeProvider` and the theme object and wrap `App` with it.
 
-### 2.3 Reactstrap
+### 3.2- StyledFriend.js
 
-* Installation of the library.
-* Using a component inside the project.
+1. See the CSS inside `styles.css` that targets `.friend` and comment it out.
+2. We will create a styled component for `components/Friend` instead, using those rules we commented out.
+3. Add `color` and `background-color` rules pulling in values from the theme.
+4. Demo adding a media query, improve by pulling in the breakpoint from the theme.
+5. Demo a `&:hover` changing `background-color`. Improve by adding a transition.
+6. Demo a `&::before` with the `content` rule.
+7. Demo nesting a rule for the button.
+8. Open Dev Tools and inspect the `index.html` and find the style tag and classnames used by sc.
+9. Optional: demo keyframes and animation.
 
-## 3- Demo of npm, npx & CRA
+### 3.3- Details.js
 
-## 4- Demo of Styled Components
+1. Give students freedom to experiment adding a styled component for `components/Details`.
+2. Make the point we can build smaller, more reusable sc for buttons and other elements.
 
-## 5- Demo of Reactstrap
+## 4- Demo of Reactstrap (15')
 
-## 4- Links of Interest
+1. Show the docs and install library.
+2. Import a component from Reactstrap.
+3. Make the point this brings all of Bootstrap's styles with it.
+4. Perhaps makes more sense on pages that already have Bootstrap.
+
+## 5- Links of Interest
 
 * [Installing npm packages globally](https://docs.npmjs.com/downloading-and-installing-packages-globally)
 * [npm VS. npx](https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/)
@@ -52,7 +55,7 @@
 * [Styled Components](https://styled-components.com/docs)
 * [Reactstrap](https://reactstrap.github.io/)
 
-## 5- Following Along and Catching Up
+## 6- Following Along and Catching Up
 
 * The instructor should make sure students clone the starter repo without forking it.
 * The instructor must make commits to a `lecture` branch and push them regularly (or use a script to do it).
