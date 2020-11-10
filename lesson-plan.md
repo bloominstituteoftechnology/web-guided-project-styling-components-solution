@@ -32,8 +32,9 @@
 5. Demo a `&:hover` changing `background-color`. Improve by adding a transition.
 6. Demo a `&::before` with the `content` rule.
 7. Demo nesting a rule for the button.
-8. Open Dev Tools and inspect the `index.html` and find the style tag and classnames used by sc.
-9. Optional: demo keyframes and animation.
+8. Demo the sc taking data throgh a prop and using it inside the styles.
+9. Open Dev Tools and inspect the `index.html` and find the style tag and classnames used by sc.
+10. Optional: demo keyframes and animation.
 
 ### 3.3- Details.js
 
