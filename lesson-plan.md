@@ -9,9 +9,9 @@
 
 1. Verify version of node and npm as npx requires at least npm 5.2.0.
 2. Demo installing CRA globally and using it to scaffold a project.
-3. Demo listing all global npm packages with `npm list -g --depth=0`.
-4. Demo uninstalling CRA and using CRA with npx instead.
-5. Explain the `--use-npm` flag to force CRA to use npm even if Yarn is available.
+3. Explain the `--use-npm` flag to force CRA to use npm even if Yarn is available.
+4. Demo listing all global npm packages with `npm list -g --depth=0`.
+5. Demo uninstalling CRA and using CRA with npx instead.
 6. Review the available scripts.
 
 ## 3- Demo of Styled Components (70')
