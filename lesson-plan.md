@@ -1,3 +1,5 @@
+# This currently only works in Chrome (Safari / Edge not tested). Firefox doesn't allow an http endpoint (parcel in this case) to hit an https endpoint (msw).
+
 # Lesson Plan
 
 ## 1- Preliminaries
